@@ -12,19 +12,19 @@
 
     <div class="col-md-8 col-md-offset-2">
 <h2>欢迎使用</h2>
+
     <div class="panel panel-default">
       <!-- Default panel contents -->
-      <div class="panel-heading">导航</div>
-      <div class="panel-body">
-        <p>本网站包含以下模块您可以点击进入</p>
-      </div>
+      <div class="panel-heading">导航:本网站包含以下模块您可以点击进入</div>
+
 
       <!-- List group -->
       <ul class="list-group">
-        <li class="list-group-item"><a href="{% url 'report_form' %}">{% trans '报告' %}</a></li>
-        <li class="list-group-item"><a href="{% url 'articles' %}">{% trans '博客' %}</a></li>
-        <li class="list-group-item"><a href="{% url 'questions' %}">{% trans '提问' %}</a></li>
-        <li class="list-group-item"><a href="{% url 'network' %}">{% trans '用户组' %}</a></li>
+        <li class="list-group-item"><a href="{% url 'report_form' %}">{% trans '报告' %}</a> &nbsp 直接输入患者id生成word版报告</li>
+          <li class="list-group-item"><a href="{% url 'questions' %}">{% trans '提问' %}</a> &nbsp 有问题可以记录在这</li>
+
+          <li class="list-group-item"><a href="{% url 'articles' %}">{% trans '博客' %}</a> &nbsp 简易博客</li>
+        <li class="list-group-item"><a href="{% url 'network' %}">{% trans '用户组' %}</a> &nbsp 查看小伙伴</li>
       </ul>
     </div>
 
