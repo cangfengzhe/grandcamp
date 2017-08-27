@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block main %}
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="page-header">
+        <button type="button" class="btn btn-primary pull-right btn-compose" title="{% trans 'Press Ctrl + P to compose' %}">
+          <span class="glyphicon glyphicon-share-alt"></span> {% trans 'Compose' %}
+        </button>
+        <h1>{% trans 'Feed' %}</h1>
+      </div>
+
+      <div class="panel panel-default panel-feed">
+        <div class="panel-heading">
+          <h3 class="panel-title">{% trans 'Latest posts' %}</h3>
+        </div>
+        <div class="panel-body">
+          <a href="{{upload_file}}">{{upload_file}}</a>  {{upload_file}}
+         <a href="{% static 'my_app/myexample.jpg' %}" > aaa</a>
+
+        </div>
+      </div>      
+    </div>
+  </div>
+
+
+
+{% endblock main %}

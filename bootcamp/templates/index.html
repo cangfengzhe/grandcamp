@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block main %}
+
+<div class="row">
+
+    <div class="col-md-8 col-md-offset-2">
+<h2>欢迎使用</h2>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">导航</div>
+      <div class="panel-body">
+        <p>本网站包含以下模块您可以点击进入</p>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item"><a href="{% url 'report_form' %}">{% trans '报告' %}</a></li>
+        <li class="list-group-item"><a href="{% url 'articles' %}">{% trans '博客' %}</a></li>
+        <li class="list-group-item"><a href="{% url 'questions' %}">{% trans '提问' %}</a></li>
+        <li class="list-group-item"><a href="{% url 'network' %}">{% trans '用户组' %}</a></li>
+      </ul>
+    </div>
+
+    </div>
+</div>
+
+
+{% endblock main %}
